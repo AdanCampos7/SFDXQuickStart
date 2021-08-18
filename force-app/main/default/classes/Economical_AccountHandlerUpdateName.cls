@@ -11,17 +11,14 @@ Modification Log :
 public class Economical_AccountHandlerUpdateName {
     public void UpdateName(List<Account> lst2Update) {
         String strUpName;
-        List<Account> lstUpdateAcc = new List<Account>();
 
         if(lst2Update.size() > 0){
             for(Account acc: lst2Update){
                 if (acc.Name != null) {
                     strUpName = acc.Name + "_Test";
                     acc.Name = strUpName;
-                    lstUpdateAcc.add(acc);
                 }
             }
         }
-        update lstUpdateAcc;
     }
 }
