@@ -12,6 +12,6 @@ trigger AccountTrigger on Account (before insert) {
     Economical_AccountHandlerUpdateName UpdateAccountName = new Economical_AccountHandlerUpdateName();
 
     if(Trigger.insert){
-        
+        UpdateAccountName(Trigger.new);
     }
 }
