@@ -9,14 +9,12 @@ Modification Log :
 * Adan Campos                 08/18/2021      1.0           Original Version
 *************************************************************************************/
 public class Economical_AccountHandlerUpdateName {
-    public void UpdateName(List<Account> lst2Update) {
-        String strUpName;
 
+    public void UpdateName(List<Account> lstAccount) {
         if(lst2Update.size() > 0){
             for(Account acc: lst2Update){
                 if (acc.Name != null) {
-                    strUpName = acc.Name + "_Test";
-                    acc.Name = strUpName;
+                    acc.Name = acc.Name + "_Test";
                 }
             }
         }
